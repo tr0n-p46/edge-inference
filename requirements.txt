@@ -1,4 +1,13 @@
-# Python packages required for classify_picamera.py
 numpy
-Pillow
 flask
+tqdm
+
+--extra-index-url https://www.piwheels.org/simple/
+scipy
+matplotlib
+opencv-python~=3.4.11.45
+scikit-image
+scikit-learn
+
+--extra-index-url https://google-coral.github.io/py-repo/
+tflite_runtime

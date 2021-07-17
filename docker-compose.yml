@@ -1,4 +1,4 @@
-web:
-  image: "271900650525.dkr.ecr.us-east-2.amazonaws.com/greenggrasssample:latest"
+facerecognizer:
+  image: "271900650525.dkr.ecr.us-east-2.amazonaws.com/facerecognizer:latest"
   ports:
     - "5000:5000"
