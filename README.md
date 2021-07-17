@@ -76,4 +76,22 @@ Deploy
     `aws s3 cp docker-compose.yaml s3://facerecognizer-store`
 14. Create greengrass deplployment
     `aws greengrass create-deployment --deployment-type NewDeployment --group-id 583403b7-09fa-4496-a29f-94c56dadb12e --group-version-id ba8b947c-205e-416b-bc72-0bf42c0cd8d5`
+    
+Usage
+-----
+```
+Request:
+curl -F image=@larry3.jpeg http://192.168.0.5:5000/recognize
+
+Response:
+{
+    "elapsed_ms": 899.9291520012775,
+    "predictions": [
+        {
+            "confidence": 39.138180868966245,
+            "name": "Larry_Page"
+        }
+    ]
+}
+```
 
